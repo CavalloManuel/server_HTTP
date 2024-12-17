@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Merriweather&family=Pacifico&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Merriweather&family=Pacifico&family=Zen+Dots&display=swap');
+
+
+/*CSS DI INDEX*/
+a, h1, h2, h3, h4, h5, p{
+  font-family: 'Zen Dots', cursive;
+      }
+  
+  button{
+      font-family: 'Anton', sans-serif;
+  font-family: 'Merriweather', serif;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Zen Dots', cursive;
+  }
+  
+
+  
+  div.diviso div{
+      float: left;
+      width: 45%;
+      width: 49%;
+      width: 45%;
+      padding: 0 2%
+      }
+  
+  div.clear{
+      float: none; clear: left
+      }
+  
+      .bgdiv {
+    background-color: rgb(35, 38, 39);
+    color: white;
+    
+  }
+  
+  .fontdiv{
+    font-size: small;
+  }
+  
+  
+  #servizi {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .colonna {
+    flex: 1 1 25%;
+    padding: 10px;
+  }
+  
+  .colonna2{
+    flex: 1 1 25%;
+    padding: 40px;
+    margin:50px;
+  }
+
+  .h3ultimo {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .pultimoo {
+    font-size: 12px;
+    
+  }
+  
+.nome1{
+  font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+
+.supreme{
+  color: #ff0000;
+}
+
+.rimuovi1{
+  background-color: orange;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+
+}
+
+.rimuovi2{
+  background-color: white;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.rimuovi6{
+text-decoration: none; 
+font-weight: bold;
+background-color: #ff0000;
+color: #fff;
+padding: 5px 10px;
+border: none;
+cursor: pointer;
+}
+
+.grey{
+  background-color: #888;
+}
+
+
+/*CSS DI J1 J3 J4 J5 J6*/
+  .bodyj {
+    
+    padding: 20px;
+  }
+  .h1j {
+    text-align: center;
+  }
+
+  .scarpa {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+ 
+  
+  .aggiungi {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+
+
+
+  
+  .dettagli {
+    flex: 1;
+  }
+  .nome {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .prezzo {
+    font-size: 20px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  .descrizione {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+ 
+
+
+/*CSS PER CARRELLO*/
+  
+  .oggetticarrello {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .nome {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .prezzo {
+    font-size: 16px;
+    color: #888;
+  }
+  .quantita {
+    font-size: 16px;
+  }
+  .rimuovi {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  .checkout{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+
+
+.acarrello:hover{
+      color: hotpink;
+  }
+
+.acarrello{
+text-decoration: none; 
+font-weight: bold;
+color: #0000FF
+}
+
+
+/*CSS PER PAGAMENTO*/
+.bodypagamento {
+  background-color: #e6e6e6;
+}
+
+.boxpagamento {
+  width: 400px;
+  margin: 0 auto 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 5px black;
+}
+
+.h1pagamento {
+  text-align: center;
+}
+
+.ppagamento{
+    font-weight:bold;
+}
+
+.paga {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #4aa14d;
+  color: white; 
+  border-radius: 4px;
+  
+}
+
+.paga:hover{
+  background-color: #409142;
+}
+
+.apagamento:hover{
+    color: hotpink;
+}
+
+.apagamento{
+text-decoration: none; 
+font-weight: bold;
+color: #0000FF
+}
+
+
+/*CSS PER CARRELLO*/
+
+
+.bodyultimo {
+    
+  background-color: #e6e6e6;
+}
+
+.boxultimo {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 5px black;
+}
+
+.h1ultimo {
+  text-align: center;
+}
+
+.pultimo {
+  margin-bottom: 10px;
+}
+
+.verde {
+  text-align: center;
+  color: #459748;
+  font-size: 25px;
+}
+
+.div2ultimo {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.grassetto {
+  font-weight: bold;
+}
+
+.spazio {
+  margin-left: 10px;
+}
+
+
+
+
+
+/*CSS PER REGISTRATI e login*/
+
+    .bodyregistrati {
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.containerregistrati {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.registrati {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  text-align: center;
+  width: 300px;
+}
+
+.register h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.registrati input[type="text"],
+.registrati input[type="email"],
+.registrati input[type="password"],
+.registrati input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.registrati button {
+    background-color: #4aa14d;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.registrati button:hover {
+    background-color: #409142;
+}
+

@@ -31,22 +31,25 @@ public class MyThread extends Thread {
             String resource = request[1];
             String version = request[2];
 
-            //controllo se la riga è vuota e se è vuota è finita la richiesta HTTP
             do {
                 s1 = in.readLine();
                 System.out.println(s1);
-
             } while (!s1.isEmpty());
 
-            if (resource.equals("/")) {
-                resource = "/index.html";
+            if (resource.endsWith("/")) {
+                resource = resource + "index.html";
             }
 
             File file = new File("htdocs" + resource);
-            if (file.exists()) {
+            if (file.isDirectory()) {
+                out.writeBytes("HTTP/1.1 301 Moved Permanently\n");
+                out.writeBytes("Content-Length:" + file.length() + " \n");
+                out.writeBytes("Location: " + resource + "/\n");
+                out.writeBytes("\n");
 
+            } else if (file.exists()) {
                 out.writeBytes("HTTP/1.1 200 ok\n");
-                out.writeBytes("Content-Type:" + getContentType(file)+ " \n");
+                out.writeBytes("Content-Type:" + getContentType(file) + " \n");
                 out.writeBytes("Content-Length:" + file.length() + " \n");
                 out.writeBytes("\n");
                 InputStream input = new FileInputStream(file);
@@ -66,7 +69,6 @@ public class MyThread extends Thread {
                 out.writeBytes("\n");
                 out.writeBytes(resopnseBody);
             }
-
             
             s.close();
 
@@ -74,15 +76,14 @@ public class MyThread extends Thread {
             e.printStackTrace();
         }
 
-        
     }
 
-    private static String getContentType(File f){
+    private static String getContentType(File f) {
         String[] s = f.getName().split("\\.");
         String ext = s[s.length - 1];
         switch (ext) {
             case "html":
-                return "text/html";    
+                return "text/html";
             case "txt":
                 return "text/txt";
             case "png":
@@ -92,7 +93,6 @@ public class MyThread extends Thread {
             default:
                 return "";
         }
-}
-
+    }
 
 }
